@@ -2,13 +2,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: aqua;
+  background-color: rgb(231, 235, 235);
   height: 100%;
 }
 
+/* Header */
+
 header {
   background: white;
-  height: 5em;;
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  position: relative;
 }
 
 .flex-searchbar, 
@@ -56,8 +61,33 @@ img {
   background: blue;
   color: white;
   margin-right: 1em;
+  opacity: .9;
 }
 
 #btnWhite {
   color: blue;
+}
+
+/* Trending */
+
+.flex-trending {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: azure;
+  width: 15em;
+  height: 15em;
+}
+
+.card-container  {
+  width: 80%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.card-container > h2 {
+  margin-bottom: 0;
+  opacity: .9;
 }
