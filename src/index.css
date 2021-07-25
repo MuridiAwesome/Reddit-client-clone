@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   background-color: rgb(231, 235, 235);
   height: 100%;
+  width: 100%;
 }
 
 /* Header */
@@ -21,6 +22,18 @@ header {
 .flex-btn, 
 .flex-img {
   margin:  auto;
+}
+
+.flex-img {
+  display: flex;
+  align-items: center;
+}
+
+.flex-img > p {
+  font-family: aerial;
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: .85;
 }
 
 .flex-container {
@@ -57,18 +70,32 @@ img {
   cursor: pointer;
 }
 
+
 #btnBlue {
-  background: blue;
+  background: rgb(13, 13, 243);
   color: white;
   margin-right: 1em;
   opacity: .9;
 }
 
-#btnWhite {
-  color: blue;
+#btnBlue:hover {
+  background-color: rgb(43, 93, 243);
 }
 
-/* Trending */
+#btnWhite {
+  color:rgb(13, 13, 243);
+}
+
+#btnWhite:hover {
+  opacity: .7;
+}
+
+
+
+
+
+
+/* Main --> Trending */
 
 .flex-trending {
   display: grid;
@@ -76,13 +103,17 @@ img {
 }
 
 .card {
-  background-color: azure;
   width: 15em;
   height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  border: 2px solid black;
 }
 
 .card-container  {
-  width: 80%;
+  width: 100%;
   max-width: 1050px;
   margin: 0 auto;
 }
@@ -90,4 +121,23 @@ img {
 .card-container > h2 {
   margin-bottom: 0;
   opacity: .9;
+}
+
+.post-container {
+  border: 2px solid black;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.thread-extras {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thread-info {
+  display: flex;
+}
+
+.thread-info > p {
+  margin-right: 20px;
 }
