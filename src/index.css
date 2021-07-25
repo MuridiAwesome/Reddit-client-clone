@@ -134,6 +134,16 @@ img {
   justify-content: space-between;
 }
 
+.thread-extras button {
+  background-color: rgb(13,13, 243);
+  opacity: .9;
+  padding: .3em 1.9em;
+  border-radius: 10px;
+  color: white;
+  font: 14px;
+  font-weight: 800;
+}
+
 .thread-info {
   display: flex;
 }
